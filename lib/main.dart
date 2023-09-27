@@ -1,9 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:task/Screens/taskDetails.dart';
-import 'package:task/Screens/taskDetails2.dart';
 import 'package:task/Screens/taskPage.dart';
-
 import 'firebase_options.dart';
 
 void main() async{
