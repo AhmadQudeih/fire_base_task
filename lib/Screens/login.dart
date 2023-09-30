@@ -52,7 +52,7 @@ class _loginState extends State<login> {
                 width: 50,
               ),
               Column(
-           crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     'البريد الالكتروني',
@@ -73,7 +73,7 @@ class _loginState extends State<login> {
                       shape: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(14)),
                         borderSide:
-                        BorderSide(width: 0, color: Colors.transparent),
+                            BorderSide(width: 0, color: Colors.transparent),
                       ),
                       child: TextField(
                         style: TextStyle(
@@ -94,14 +94,14 @@ class _loginState extends State<login> {
                               color: Color(0xffB3BFCB)),
                           enabledBorder: OutlineInputBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(14)),
+                                  BorderRadius.all(Radius.circular(14)),
                               borderSide: BorderSide(
                                   width: 0, color: Colors.transparent)),
                           focusedBorder: OutlineInputBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(14)),
-                              borderSide: BorderSide(
-                                  width: 1.2, color: Colors.black)),
+                                  BorderRadius.all(Radius.circular(14)),
+                              borderSide:
+                                  BorderSide(width: 1.2, color: Colors.black)),
                         ),
                       ),
                     ),
@@ -127,7 +127,7 @@ class _loginState extends State<login> {
                       shape: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(14)),
                         borderSide:
-                        BorderSide(width: 0, color: Colors.transparent),
+                            BorderSide(width: 0, color: Colors.transparent),
                       ),
                       child: TextField(
                         obscureText: _isObscure,
@@ -150,14 +150,14 @@ class _loginState extends State<login> {
                               color: Color(0xffB3BFCB)),
                           enabledBorder: OutlineInputBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(14)),
+                                  BorderRadius.all(Radius.circular(14)),
                               borderSide: BorderSide(
                                   width: 0, color: Colors.transparent)),
                           focusedBorder: OutlineInputBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(14)),
-                              borderSide: BorderSide(
-                                  width: 1.2, color: Colors.black)),
+                                  BorderRadius.all(Radius.circular(14)),
+                              borderSide:
+                                  BorderSide(width: 1.2, color: Colors.black)),
 
                           suffix: Stack(children: [
                             SizedBox(
@@ -199,7 +199,10 @@ class _loginState extends State<login> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>bottomNavgation()));
+                  // Navigator.pushReplacement(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //         builder: (context) => bottomNavgation()));
                 },
                 child: Text(
                   ' تسجيل الدخول',
@@ -217,6 +220,4 @@ class _loginState extends State<login> {
       ),
     );
   }
-
-
 }

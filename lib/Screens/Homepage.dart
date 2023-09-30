@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -36,20 +35,20 @@ class _HomepageState extends State<Homepage> {
                     child: SvgPicture.asset('images/El2.svg'),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(
-                        top: 16, left: 20, right: 20),
+                    padding:
+                        const EdgeInsets.only(top: 16, left: 20, right: 20),
                     child: Column(
                       children: [
                         Padding(
                             padding: EdgeInsets.only(bottom: 45),
-                            child:  ListTile(
+                            child: ListTile(
                               leading: Container(
                                 width: 44,
                                 height: 44,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(100),
-                                    border:
-                                    Border.all(width: 1, color: Color(0xffFDB71A))),
+                                    border: Border.all(
+                                        width: 1, color: Color(0xffFDB71A))),
                                 child: ClipRRect(
                                     borderRadius: BorderRadius.circular(100),
                                     child: Image.asset(
@@ -58,23 +57,21 @@ class _HomepageState extends State<Homepage> {
                                       height: 63,
                                     )),
                               ),
-                              title: Text('مرحبا بك',style: GoogleFonts.cairo(
-                                fontSize: 10,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xffFFFFFF),
-
-                              )),
-                              subtitle: Text('اسم المشرف',style: GoogleFonts.cairo(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xffFFFFFF),
-
-                              )),
-                              trailing: SvgPicture.asset('images/icons/drawer.svg'),
-                            )
-
-
-                        ),
+                              title: Text('مرحبا بك',
+                                  style: GoogleFonts.cairo(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xffFFFFFF),
+                                  )),
+                              subtitle: Text('اسم المشرف',
+                                  style: GoogleFonts.cairo(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xffFFFFFF),
+                                  )),
+                              trailing:
+                                  SvgPicture.asset('images/icons/drawer.svg'),
+                            )),
                       ],
                     ),
                   ),
@@ -84,7 +81,7 @@ class _HomepageState extends State<Homepage> {
             Expanded(
               child: Container(
                 height: 650,
-                padding: EdgeInsets.only(top:80),
+                padding: EdgeInsets.only(top: 80),
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
@@ -92,7 +89,7 @@ class _HomepageState extends State<Homepage> {
                       topLeft: Radius.circular(50)),
                   color: Colors.white,
                 ),
-                child:Column(
+                child: Column(
                   children: [
                     Container(
                       height: 114,
@@ -105,25 +102,34 @@ class _HomepageState extends State<Homepage> {
                                 blurRadius: 20,
                                 spreadRadius: 0,
                                 offset: Offset(5, 10),
-                                color: Color(0xffCE97CB).withOpacity(0.3)
-                            )
-                          ]
-                      ),
+                                color: Color(0xffCE97CB).withOpacity(0.3))
+                          ]),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SvgPicture.asset('images/icons/people.svg',width: 69.33 ,height: 52,fit: BoxFit.cover,),
+                          SvgPicture.asset(
+                            'images/icons/people.svg',
+                            width: 69.33,
+                            height: 52,
+                            fit: BoxFit.cover,
+                          ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 11,),
-                    Text('الطلاب المسجلين',style: GoogleFonts.cairo(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff5E5E5E),
-
-                    ),),
-                    SizedBox(height: 26,),
+                    SizedBox(
+                      height: 11,
+                    ),
+                    Text(
+                      'الطلاب المسجلين',
+                      style: GoogleFonts.cairo(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff5E5E5E),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 26,
+                    ),
                     Container(
                       height: 114,
                       width: 188,
@@ -135,36 +141,39 @@ class _HomepageState extends State<Homepage> {
                                 blurRadius: 20,
                                 spreadRadius: 0,
                                 offset: Offset(5, 10),
-                                color: Color(0xffFDB71A).withOpacity(0.3)
-                            )
-                          ]
-                      ),
+                                color: Color(0xffFDB71A).withOpacity(0.3))
+                          ]),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SvgPicture.asset('images/icons/task.svg',width: 69.33 ,height: 52,fit: BoxFit.cover,),
+                          SvgPicture.asset(
+                            'images/icons/task.svg',
+                            width: 69.33,
+                            height: 52,
+                            fit: BoxFit.cover,
+                          ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 11,),
-                    Text('مهام الطلاب',style: GoogleFonts.cairo(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff5E5E5E),
-
-                    ))
+                    SizedBox(
+                      height: 11,
+                    ),
+                    Text('مهام الطلاب',
+                        style: GoogleFonts.cairo(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff5E5E5E),
+                        ))
                   ],
                 ),
               ),
             ),
-
           ],
         ),
       ),
       // appBar: AppBar(
       //   backgroundColor: Colors.transparent,
       // ),
-
     );
   }
 }

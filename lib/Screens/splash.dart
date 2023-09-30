@@ -12,10 +12,10 @@ class splash extends StatefulWidget {
 }
 
 class _splashState extends State<splash> {
-
   void initState() {
     Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => login() ));
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => login()));
     });
     super.initState();
   }
@@ -25,7 +25,7 @@ class _splashState extends State<splash> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
+          backgroundColor: Colors.white,
           body: SizedBox(
             width: double.infinity,
             child: Column(
@@ -38,9 +38,7 @@ class _splashState extends State<splash> {
                 ),
               ],
             ),
-          )
-
-      ),
+          )),
     );
   }
 }
