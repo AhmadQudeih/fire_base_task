@@ -15,7 +15,7 @@ class _loginState extends State<login> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFFFFFF),
+      backgroundColor: const Color(0xffFFFFFF),
       body: Padding(
         padding: const EdgeInsets.only(top: 69, right: 50, left: 50),
         child: Directionality(
@@ -27,7 +27,7 @@ class _loginState extends State<login> {
                 width: 150,
                 height: 150,
               ),
-              Center(
+              const Center(
                 child: Text(
                   'UFUQ SCHOOLS',
                   style: TextStyle(
@@ -37,7 +37,7 @@ class _loginState extends State<login> {
                   ),
                 ),
               ),
-              Center(
+              const Center(
                 child: Text(
                   '  مدارس أفق الأبتدائية  ',
                   style: TextStyle(
@@ -47,26 +47,26 @@ class _loginState extends State<login> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
                 width: 50,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'البريد الالكتروني',
                     style: TextStyle(
                         fontFamily: 'er',
                         fontSize: 17,
                         color: Color(0xff292D32)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
 
                   // TextField
-                  SizedBox(
+                  const SizedBox(
                     height: 65,
                     child: Card(
                       elevation: 0,
@@ -106,17 +106,17 @@ class _loginState extends State<login> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
-                  Text(
+                  const Text(
                     'كلمة المرور',
                     style: TextStyle(
                         fontFamily: 'er',
                         fontSize: 17,
                         color: Color(0xff292D32)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
                   // TextField password
@@ -124,43 +124,43 @@ class _loginState extends State<login> {
                     height: 65,
                     child: Card(
                       elevation: 0,
-                      shape: OutlineInputBorder(
+                      shape: const OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(14)),
                         borderSide:
                             BorderSide(width: 0, color: Colors.transparent),
                       ),
                       child: TextField(
                         obscureText: _isObscure,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontFamily: 'er',
                             fontSize: 17,
                             color: Colors.black),
                         textAlignVertical: TextAlignVertical.center,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Color(0xffEFF2F5),
-                          contentPadding: EdgeInsets.symmetric(
+                          fillColor: const Color(0xffEFF2F5),
+                          contentPadding: const EdgeInsets.symmetric(
                               vertical: 14, horizontal: 13),
                           // constraints: BoxConstraints.tightFor(width: double.infinity, height: 51),
 
                           hintText: 'Enter your Password',
-                          hintStyle: TextStyle(
+                          hintStyle: const TextStyle(
                               fontFamily: 'er',
                               fontSize: 17,
                               color: Color(0xffB3BFCB)),
-                          enabledBorder: OutlineInputBorder(
+                          enabledBorder: const OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(14)),
                               borderSide: BorderSide(
                                   width: 0, color: Colors.transparent)),
-                          focusedBorder: OutlineInputBorder(
+                          focusedBorder: const OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(14)),
                               borderSide:
                                   BorderSide(width: 1.2, color: Colors.black)),
 
                           suffix: Stack(children: [
-                            SizedBox(
+                            const SizedBox(
                               height: double.infinity,
                               width: 40,
                               child: Card(
@@ -186,7 +186,7 @@ class _loginState extends State<login> {
                       ),
                     ),
                   ),
-                  Text(
+                  const Text(
                     'نسيت كلمة المرور ؟',
                     style: TextStyle(
                       color: Color(0xff53A4B1),
@@ -194,7 +194,7 @@ class _loginState extends State<login> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
@@ -204,15 +204,15 @@ class _loginState extends State<login> {
                   //     MaterialPageRoute(
                   //         builder: (context) => bottomNavgation()));
                 },
-                child: Text(
+                child: const Text(
                   ' تسجيل الدخول',
                   style: TextStyle(fontSize: 18),
                 ),
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xff53A4B1),
+                    backgroundColor: const Color(0xff53A4B1),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(13)),
-                    minimumSize: Size(100, 60)),
+                    minimumSize: const Size(100, 60)),
               ),
             ],
           ),
